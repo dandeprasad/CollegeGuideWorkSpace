@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Click the button to display the entire URL of the current page.</p>
+
+<button onclick="myFunction()">Try it</button>
+<a href="javascript:getUrl(dan+'/home_latest_info_ads/31.jpeg')">asdf</a>
+<p id="demo"></p>
+<img src="javascript:getUrl(dan+'/home_latest_info_ads/31.jpeg')" />
+<script>
+var dan = "https://s3.us-east-2.amazonaws.com/elasticbeanstalk-us-east-2-083183914236"
+function myFunction() {
+  var x = location.href;
+  document.getElementById("demo").innerHTML = x;
+}
+function getUrl(dan){
+	return dan;
+}
+
+</script>
+
+</body>
+</html>
+
